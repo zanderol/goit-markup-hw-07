@@ -1,0 +1,45 @@
+/* 
+============================================================
+                        Feature section
+============================================================  
+*/
+
+.feature__list {
+  display: flex;
+  list-style: none;
+}
+
+.feature__item {
+  margin-right: 30px;
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.feature__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--feature-item-icon-bg);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-gray);
+  margin-top: 10px;
+}

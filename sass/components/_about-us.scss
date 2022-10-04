@@ -1,0 +1,51 @@
+/* 
+============================================================
+                          About us
+============================================================  
+*/
+
+.about-us {
+  padding-top: 0;
+}
+
+.section__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.about-us__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.about-us__item {
+  margin-top: 50px;
+}
+
+.about-us__thumb {
+  position: relative;
+}
+
+.about-us__title {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+
+  padding: 27px 0;
+
+  color: var(--main-white);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #2f303a;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,47 @@
+/* 
+=================================================
+                  Our Customers
+=================================================
+*/
+.customers-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0 0 50px 0;
+}
+
+.section .customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.customers-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-link {
+  color: var(--customers-icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--customers-icon-color);
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--main-blue);
+    border-color: var(--main-blue);
+  }
+}
+
+.customers-icon {
+  fill: currentColor;
+}

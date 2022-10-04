@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,8 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
 
+    <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Студія</title>
   </head>
 
   <body>
@@ -25,18 +26,21 @@
     <div>
       <!---------------------- Header ---------------------->
       <header class="main-header">
-        <nav class="main-nav container">
-          <a href="/" class="link main-logo-link"> <span class="logo-web-blue">Web</span>Studio </a>
-          <ul class="site-nav">
-            <li class="item-header">
-              <a class="link" href="./index.html">Студія</a>
-            </li>
-            <li class="item-header">
-              <a class="current-page link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="item-header"><a class="link" href="#">Контакти</a></li>
-          </ul>
-
+        <div class="container header-container">
+          <nav class="main-nav">
+            <a href="/" class="link main-logo-link">
+              <span class="logo-web-blue">Web</span>Studio
+            </a>
+            <ul class="site-nav">
+              <li class="item-header">
+                <a class="link" href="./index.html">Студія</a>
+              </li>
+              <li class="item-header">
+                <a class="link current__page" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="item-header"><a class="link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
           <ul class="header-contacts">
             <li class="item-header">
               <a class="link" href="mailto:info@devstudio.com">
@@ -53,26 +57,26 @@
               >
             </li>
           </ul>
-        </nav>
+        </div>
       </header>
       <main class="main">
         <div class="section">
           <!---------------------- Portfolio navigation ---------------------->
           <section class="buttons">
             <h1 class="visually-hidden">Portfolio navigation</h1>
-            <ul>
-              <li class="button-item"><button class="single-button" type="submit">Усі</button></li>
+            <ul class="buttons-list">
+              <li class="button-item"><button class="single__button" type="submit">Усі</button></li>
               <li class="button-item">
-                <button class="single-button" type="submit">Веб-сайти</button>
+                <button class="single__button" type="submit">Веб-сайти</button>
               </li>
               <li class="button-item">
-                <button class="single-button" type="submit">Додатки</button>
+                <button class="single__button" type="submit">Додатки</button>
               </li>
               <li class="button-item">
-                <button class="single-button" type="submit">Дизайн</button>
+                <button class="single__button" type="submit">Дизайн</button>
               </li>
               <li class="button-item">
-                <button class="single-button" type="submit">Маркетинг</button>
+                <button class="single__button" type="submit">Маркетинг</button>
               </li>
             </ul>
           </section>
@@ -94,7 +98,7 @@
                       </div>
                     </div>
                     <div class="single-project-block">
-                      <h3>Технокряк</h3>
+                      <h3 class="project-title">Технокряк</h3>
                       <p class="project-list-desc">Веб-сайт</p>
                     </div>
                   </a>
@@ -303,33 +307,33 @@
           </div>
           <div class="social-media">
             <!----------------- Footer Social Media ----------------->
-            <h3>Приєднуйтесь</h3>
-            <ul class="social-media-list">
-              <li class="link icon">
-                <a class="link-footer" href="#">
-                  <svg class="icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram-2-1"></use>
+            <h2 class="footer-title">Приєднуйтесь</h2>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--light" href="#">
+                  <svg class="socials__icon" width="20" height="20" fill="currentColor">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="link icon">
-                <a class="link-footer" href="#">
-                  <svg class="icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-twitter-1-1"></use>
+              <li class="socials__item">
+                <a class="socials__link socials__link--light" href="#">
+                  <svg class="socials__icon" width="20" height="20" fill="currentColor">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="link icon">
-                <a class="link-footer" href="#">
-                  <svg class="icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-facebook-1-1"></use>
+              <li class="socials__item">
+                <a class="socials__link socials__link--light" href="#">
+                  <svg class="socials__icon" width="20" height="20" fill="currentColor">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="link icon">
-                <a class="link-footer" href="#">
-                  <svg class="icon-footer" width="20" height="20">
-                    <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+              <li class="socials__item">
+                <a class="socials__link socials__link--light" href="#">
+                  <svg class="socials__icon" width="20" height="20" fill="currentColor">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
               </li>
@@ -348,7 +352,7 @@
                   class="subscribe-field"
                 />
               </label>
-              <button class="subscribe-btn main-button" type="submit">
+              <button class="subscribe-btn main__button" type="submit">
                 Підписатися
                 <svg class="icon-footer" width="24" height="24">
                   <use href="./images/icons.svg#subscribe"></use>

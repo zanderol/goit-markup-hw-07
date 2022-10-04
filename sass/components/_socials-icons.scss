@@ -1,0 +1,39 @@
+/* ----- Member's Social Media ----- */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+  }
+}
+
+.socials__link--light {
+  color: #ffffff;
+  background-color: var(--social-media-bg-color);
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
+.social-media {
+  margin-left: 70px;
+}

@@ -1,0 +1,71 @@
+/* 
+============================================================
+                    Main Button
+============================================================  
+*/
+
+.main__button {
+  height: 50px;
+  width: 200px;
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  align-items: center;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+/* 
+============================================================
+                    Portfolio Buttons
+============================================================  
+*/
+
+.buttons-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.single__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  border: none;
+  background-color: var(--single-button-bg);
+  padding: 6px 22px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}

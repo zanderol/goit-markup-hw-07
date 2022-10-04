@@ -1,0 +1,20 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// Index page
+@import './components/base';
+
+@import './components/header';
+@import './components/buttons';
+@import './components/logo';
+@import './components/socials-icons';
+@import './components/footer';
+@import './components/subscribe';
+@import './components/modal-window';
+
+@import './components/hero';
+@import './components/feature';
+@import './components/about-us';
+@import './components/our-team';
+@import './components/our-customers';
+@import './components/projects';
